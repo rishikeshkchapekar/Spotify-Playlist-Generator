@@ -12,7 +12,7 @@ For the first time, I made a New Year's resolution: NYR 2020-366 days, 366 bands
 
 1. `artist_list.txt` : List of artists I really,really like. I use this information to find similar artists
 2. `blacklist.txt` : The artists I have already listened to (and a few I don't like). I don't want repitition in the final list of 366 artists
-3. `all.txt` : List generated after using the artist_list.txt . In my case the list
+3. `all.txt` : List generated after using the artist_list.txt . In my case the list contained around 430 artists after filtering out the ones from `blacklist.txt`
 4. `list366.txt` : The final list of 366 artists, picked out at random from `all.txt`
 5. `last.txt` : stores the name of the last artist whose playlist was created. So the next playlist will be of the artist right after this one in the `list366.txt`
 
