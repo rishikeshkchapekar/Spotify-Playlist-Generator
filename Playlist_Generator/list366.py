@@ -38,7 +38,7 @@ g=open('all.txt','r')
 data=g.read().split("\n")			
 _f = open('list366.txt','a')
 done = []
-while count<340:
+while count<366:
 	index = random.randint(0,len(data)-1)
 	artist = data[index]
 	if artist not in done:
