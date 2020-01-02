@@ -20,3 +20,4 @@ For the first time, I made a New Year's resolution: NYR 2020-366 days, 366 bands
 
 1. If your tastes are like mine, just directly run `python3 playlist_a.txt` . 
 2. You can delete contents of every txt file, and in `artist_list.txt` add a bunch of artists you like, in the `blacklist.txt` add a bunch of artists you don't want to repeat, and then run `python3 list366.py`. Check that the list of 366 artists is created, and then run `python3 playlist_a.txt` 
+3. Running `python3 playlist_a.py` creates 1 playlist each time you run it
