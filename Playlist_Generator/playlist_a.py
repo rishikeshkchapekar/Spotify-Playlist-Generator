@@ -53,21 +53,21 @@ def createPlaylist(artist):
 
 f = open('list366.txt','r')
 d = open('last.txt','r+')
-d_data = d.read()
-data =[]
+c=d.read().split("\n")
+d_data = c[len(c)-1]
 tracklist=[]
 __f = f.read().split("\n")
 _artist=""
 if d_data =="":
 	_artist = __f[0]
 elif d_data!="":
-	data = __f[__f.index(d_data)+1]
+	_artist = __f[__f.index(d_data)+1]
 plID=createPlaylist(_artist)
 for p in range(0,16):
 	tracklist.append(get_songs(_artist))
 print(tracklist)	
 for q in range(0,len(tracklist)):
 	addSongs(tracklist[q],plID);			
-d.write(_artist)
+d.write("\n"+_artist)
 f.close()
 d.close()	
