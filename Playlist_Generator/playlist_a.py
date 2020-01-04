@@ -14,8 +14,9 @@ data = st.start_session(uid,"<password>")
 post_token=data[0]
 cred = SpotifyClientCredentials(client_id=client_id, client_secret=client_secret)
 sp = spotipy.Spotify(client_credentials_manager=cred)
+repeat_index = []
 def get_songs(artist,sp=sp):
-
+	global repeat_index
 	uris = ""
 	song_uris = ""
 	result = sp.search(artist)
@@ -26,6 +27,9 @@ def get_songs(artist,sp=sp):
 		uris = sp_albums['items'][b]['uri']
 		songs = sp.album_tracks(uris)
 		n = random.randint(0,len(songs['items'])-1)
+		while n in repeat_index:
+			n = random.randint(0,len(songs['items'])-1)
+		repeat_index.append(n)		
 		sname = songs['items'][n]['name']
 		song_uris=songs['items'][n]['uri']
 	return song_uris
