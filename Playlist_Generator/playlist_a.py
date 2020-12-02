@@ -6,10 +6,11 @@ import requests as req
 import random
 import spotify_token as st 
 
-uid = "<username..get it from account settings>"
+uid = "<username..get it from account settings>" #Can be found on your regular Spotify profile
 client_id = '<client id >'
 client_secret = '<client secret>'
 # get the client secret and id from dev console of spotify
+#Please check ReadMe.md on information on how to get these credentials
 data = st.start_session(uid,"<password>")
 post_token=data[0]
 cred = SpotifyClientCredentials(client_id=client_id, client_secret=client_secret)
