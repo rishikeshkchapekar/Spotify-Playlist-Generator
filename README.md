@@ -26,3 +26,4 @@ For the first time, I made a New Year's resolution: NYR 2020-366 days, 366 bands
 
 1. Client ID and Client Secret can be obtained once you sign up on the developers page of Spotify ([here](https://developer.spotify.com/documentation/web-api/))
 2. User ID (uid) can be obtained from your regular Spotify profile. It'll be in the "username" field, which will be a number.
+3. Password : your Spotify password
