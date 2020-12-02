@@ -2,7 +2,7 @@
 
 ## Desscription
 
-For the first time, I made a New Year's resolution: NYR 2020-366 days, 366 bands. So I made a script which will make playlists of 366 bands , bands I have not heard before, on Spotify. 
+This script makes one playlist of an artist you've never heard of before (probably) each time you run it. The list of new artists is based on your likes. I run this code as a cron job, once a day, for the entire year 2020
 
 ## Different Scripts Used
 1. list366.py : This creates a list of 366 bands based on the bands I like
